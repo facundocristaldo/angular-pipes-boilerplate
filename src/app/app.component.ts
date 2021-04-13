@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-pipes';
+  name: string;
+  date: string;
+  amount: number;
+  height: number;
+  miles: string;
+
+  onNameChange(value: string) {
+    this.name = value
+  }
+
+  onDateChange(value: string) {
+    this.date = value
+  }
+  onAmountChange(value: string) {
+    this.amount = parseFloat(value)
+  }
+  onHeightChange(value: string) {
+    this.height = parseFloat(value)
+  }
+  onMilesChange(value: string) {
+    this.miles = value
+  }
 }
